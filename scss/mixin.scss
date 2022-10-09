@@ -1,0 +1,15 @@
+@mixin main-style {
+    background-size: cover;
+    background-position: left;
+}
+
+@mixin main2-style {
+    background-size: cover;
+    box-shadow: 0 5px 3px #afb7be;
+}
+
+@mixin footer-style {
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
