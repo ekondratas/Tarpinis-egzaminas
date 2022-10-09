@@ -1,0 +1,81 @@
+.container {
+    .img-1, .img-2, .img-3 {
+      width: 79px;
+      height: 70px;
+      margin: 40px;
+    }
+     
+    .img-1 {
+        background: $img1;
+    }
+    .img-2 {
+        background: $img2;
+    }
+    .img-3 {
+        background: $img3;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+main {
+    .img2-1, .img2-2, .img2-3 {height: 550px;}
+
+    .img2-1{
+        background: $img4;
+        @include main-style;
+    }
+    .img2-2{
+        background: $img5;
+        @include main-style;
+    }
+      .img2-3{
+        background: $img6;
+        @include main-style;
+    }
+}
+
+main-2 {
+    .img3-1, .img3-2, .img3-3 {
+          width: 200px;
+          height: 200px;
+          border-radius: 100%;
+    }
+    .img3-1 {
+            background: $img7;
+            @include main2-style;
+    }
+    .img3-2{
+            background: $img8;
+            @include main2-style;;
+    }
+    .img3-3{
+            background: $img9;
+            @include main2-style;;
+    }
+}
+
+.images {
+    .img4 {
+        height: 30px;
+        width: 30px;
+        margin: 30px 15px 60px 15px;
+      
+        &:nth-of-type(1){
+            background: $img10;
+            @include footer-style;
+            height: 34px;
+            width: 20px;
+        }
+
+          &:nth-of-type(2){
+            background: $img11;
+            @include footer-style;
+        }
+
+          &:nth-of-type(3){
+            background: $img12;
+            @include footer-style;
+        }
+    }
+}
